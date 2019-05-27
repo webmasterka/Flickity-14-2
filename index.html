@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flickity</title>
+  <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+  <link rel="stylesheet" type="text/css" href="vendor/flickity.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+    <div class="progress-bar"></div>
+    <div class="main-carousel" id="result">
+
+    </div>
+
+    <div class="button-group">
+        <button id="button">RESET BUTTON</button>
+    </div>
+    <p id="infos"></p>
+    <div id="map"></div>
+
+    <script src="vendor/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
+    <script src="vendor/mustache.js"></script>
+    <script id="template-product-list" type="x-tmpl-mustache">
+            <div class="carousel-cell" id={{ id }} style="background-image: url( {{ image }} )">
+                <a href={{ id }}></a>
+                    <div class="container">
+                        <h2> {{ title }} </h2>
+                        <p> {{ description }} </p>
+                    </div>
+            </div>
+    </script>
+    <script>
+                var productsData = [
+                    {
+                        id: 'carousel-1',
+                        title:'Photo 1',
+                        image:'https://foter.com/photos/398/natures-tree-trees-railing.jpg',
+                        description:'LOREM IPSUM'
+                    },
+                    {   
+                        id: 'carousel-2',
+                        title:'Photo 2',
+                        image:'https://foter.com/photos/394/sunset-in-mountains-1.jpg?s=t',
+                        description:'LOREM IPSUM'
+                    },
+                    {   
+                        id: 'carousel-3',
+                        title:'Photo 3',
+                        image:'https://foter.com/photos/398/mystic-mountain-nature.jpg',
+                        description:'LOREM IPSUM'
+                    },
+                    {
+                        id: 'carousel-4',
+                        title:'Photo 4',
+                        image:'https://foter.com/photos/394/scenic-milky-way-above-forest-in-night-sky.jpg',
+                        description:'LOREM IPSUM'
+                    },
+                    {   
+                        id: 'carousel-5',
+                        title:'Photo 5',
+                        image:'https://foter.com/photos/398/sunset-naturally-sunsets.jpg',
+                        description:'LOREM IPSUM'
+                    }
+        ];
+    </script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
