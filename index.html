@@ -37,30 +37,35 @@
     <script>
                 var productsData = [
                     {
+                        coords: { lat: 40.685, lng: -73.944 },   
                         id: 'carousel-1',
                         title:'Photo 1',
                         image:'https://foter.com/photos/398/natures-tree-trees-railing.jpg',
                         description:'LOREM IPSUM'
                     },
                     {   
+                        coords: { lat: 36.629, lng: 127.999},  
                         id: 'carousel-2',
                         title:'Photo 2',
                         image:'https://foter.com/photos/394/sunset-in-mountains-1.jpg?s=t',
                         description:'LOREM IPSUM'
                     },
                     {   
+                        coords: { lat: 26.976, lng: 29.370},  
                         id: 'carousel-3',
                         title:'Photo 3',
                         image:'https://foter.com/photos/398/mystic-mountain-nature.jpg',
                         description:'LOREM IPSUM'
                     },
-                    {
+                    {   
+                        coords: { lat: 46.638, lng: 1.866}, 
                         id: 'carousel-4',
                         title:'Photo 4',
                         image:'https://foter.com/photos/394/scenic-milky-way-above-forest-in-night-sky.jpg',
                         description:'LOREM IPSUM'
                     },
                     {   
+                        coords: { lat: -30.301, lng: 23.319},
                         id: 'carousel-5',
                         title:'Photo 5',
                         image:'https://foter.com/photos/398/sunset-naturally-sunsets.jpg',
@@ -69,7 +74,8 @@
         ];
     </script>
     <script src="js/script.js"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkdOhhUj-qEbw0fZBQ8hpt-6RPfpqmQF4&callback=initMap"
+        async defer></script>
 </body>
 
 </html>
